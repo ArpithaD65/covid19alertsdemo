@@ -1,7 +1,7 @@
 # covid19alertsdemo
 
 ##Fork the repository
-##clone the repository t your local development evnvironment
+##clone the repository to your local development evnvironment
 ##check out your branch
 ##got to the root directory
 ##npm install
