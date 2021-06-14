@@ -43,7 +43,7 @@ export default class NewsCards extends Component {
       const res = await fetch(
         'https://newsapi.org/v2/everything?' +
           'q=coronavirus&' +
-          'from=2020-08-07&' +
+          'from=2021-06-14&' +
           'sortBy=popularity&' +
           'apiKey=d1a2290192fa42ed85d67ee17caffc4f',
       );
