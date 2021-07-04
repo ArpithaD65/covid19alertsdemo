@@ -40,10 +40,14 @@ export default class NewsCards extends Component {
   };
   makeRequestGlobalNews = () => {
     this.setState(this.setState({ cardloading: true, news: [] }), async () => {
+      var date = new Date().getDate();
+      var month = new Date().getMonth() + 1;
+      var year = new Date().getFullYear();
+      var today=year  + '-' +month + '-' + date  ;
       const res = await fetch(
         'https://newsapi.org/v2/everything?' +
           'q=coronavirus&' +
-          'from=2020-08-07&' +
+          'from='+today+'&' +
           'sortBy=popularity&' +
           'apiKey=d1a2290192fa42ed85d67ee17caffc4f',
       );
